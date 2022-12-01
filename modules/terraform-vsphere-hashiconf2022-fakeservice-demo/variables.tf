@@ -1,25 +1,25 @@
 variable "vsphere_datacenter" {
   description = "variable for the datacenter where the VMs will be deployed"
   type        = string
-  default     = "ukdcb_production"
+  default     = "Showcase"
 }
 
 variable "vsphere_datastore" {
   description = "variable for the datastore that the VMs will be placed on"
   type        = string
-  default     = "showcase-dc"
+  default     = "ukdcbsc-vsphere-pure-data"
 }
 
 variable "vsphere_cluster" {
   description = "variable for the vsphere cluster that the VMs will be placed in"
   type        = string
-  default     = "cluster-natilik/Resources"
+  default     = "ukdcbsc/Resources"
 }
 
 variable "template_network" {
   description = "variable for the network name that the VMs will be created on"
   type        = string
-  default     = "showcase_dc|hashiconf2022"
+  default     = "DSwitch-VM Network"
 }
 
 variable "template_name" {
@@ -31,7 +31,7 @@ variable "template_name" {
 variable "folder_path" {
   description = "variable for the folder path that will be used when deploying workloads"
   type        = string
-  default     = "showcase/dc/hashiconf2022"
+  default     = "Demo/Pure"
 }
 
 variable "tenant_name" {
