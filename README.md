@@ -1,1 +1,1 @@
-# pure-showcase-demo
+# PURE-SHOWCASE-DEMO
