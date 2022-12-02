@@ -21,3 +21,30 @@ module "app" {
     service_message  = "App Server!"
   }
 }
+
+# resource "purestorage_volume" "testvol_tf_res" {
+#   provider = flash
+#   name = "ukdcbsc-vpshere"
+#   size = "1099511627776"
+# }
+
+# resource "purestorage_volume" "test" {
+#   provider = flash
+#   name = "test"
+#   size = "1048000000"
+# }
+
+
+# resource "purestorage_hostgroup" "testhgrouptf" {
+#   provider = flash
+#   name     = "ukdcbsc-vsphere"
+#   hosts    = ["ukdcbsc-vsphere01","ukdcbsc-vsphere02","ukdcbsc-vsphere03"]
+#   volume {
+#     vol = purestorage_volume.testvol_tf_res.name
+#     lun = 254
+#   }
+#   volume {
+#     vol = purestorage_volume.test.name
+#     lun = 250
+#   }
+# }

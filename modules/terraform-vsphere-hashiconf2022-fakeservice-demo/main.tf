@@ -45,6 +45,7 @@ data "cloudinit_config" "config" {
   }
 }
 
+
 # data "aci_tenant" "showcase_dc" {
 #   name = var.tenant_name
 # }
